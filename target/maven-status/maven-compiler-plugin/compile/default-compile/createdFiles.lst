@@ -1,0 +1,5 @@
+com/github/adrienpessu/quickies/QuickieApplication.class
+com/github/adrienpessu/quickies/resources/QuickieResource.class
+com/github/adrienpessu/quickies/services/QuickieService.class
+com/github/adrienpessu/quickies/configuration/QuickieConfiguration.class
+com/github/adrienpessu/quickies/models/Quickie.class

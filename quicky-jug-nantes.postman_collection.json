@@ -1,0 +1,91 @@
+{
+	"variables": [],
+	"info": {
+		"name": "quicky-jug-nantes",
+		"_postman_id": "1e29d56b-4c81-7ab4-c7b2-901f340a5973",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET quickies",
+			"request": {
+				"url": "http://localhost:9000/quickies",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "POST quickies",
+			"request": {
+				"url": "http://localhost:9000/quickies",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\n    \"name\": \"Jigsaw et jdk9\",\n    \"duration\": 15\n  }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "PUT quickies",
+			"request": {
+				"url": "http://localhost:9000/quickies",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"5835c5e7a89605556936b7b5\",\n    \"name\": \"dropwizard par Adrien Pessu\",\n    \"duration\": 15\n  }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE quickies",
+			"request": {
+				"url": "http://localhost:9000/quickies",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\n    \"id\": {\n      \"timestamp\": 1479919691,\n      \"machineIdentifier\": 11048453,\n      \"processIdentifier\": 23430,\n      \"counter\": 11126873,\n      \"time\": 1479919691000,\n      \"date\": 1479919691000,\n      \"timeSecond\": 1479919691\n    },\n    \"name\": \"juste jdk9\",\n    \"duration\": 15\n  }"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

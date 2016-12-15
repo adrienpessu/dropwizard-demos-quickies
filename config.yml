@@ -1,0 +1,23 @@
+logging:
+  level: INFO
+  appenders:
+    - type: console
+      threshold: DEBUG
+      target: stderr
+
+server:
+  applicationConnectors:
+  - type: http
+    port: 9000
+  adminConnectors:
+  - type: http
+    port: 9010
+
+# Mongo parameters
+mongoHost: ${MONGO_HOST:-localhost}
+mongoPort: ${MONGO_PORT:-27017}
+mongoDB: ${MONGO_DB:-quickies}
+
+#jwt
+jwtAudience: audience
+jwtTokenSecret: password
