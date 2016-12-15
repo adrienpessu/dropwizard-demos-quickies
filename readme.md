@@ -3,11 +3,14 @@
 
 ## Getting started
 
-You must start a mongodb server on your own or using the docker-compose file 
+First clen install the project
+````
+mvn clean install
+````
+Then you must start a mongodb server on your own or using the docker-compose file 
 ```docker-compose up -d```
 If you want to use a database on a different server or a different port, please change settings in the config.yml file.
  
-or
 
 ````
 java -jar target/dropwizard-jug-nantes-1.0.0-SNAPSHOT.jar server config.yml
